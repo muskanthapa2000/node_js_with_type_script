@@ -1,0 +1,29 @@
+{
+  "name": "node_js_with_type_script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muskanthapa2000/node_js_with_type_script.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muskanthapa2000/node_js_with_type_script/issues"
+  },
+  "homepage": "https://github.com/muskanthapa2000/node_js_with_type_script#readme",
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "express": "^4.21.0"
+  }
+}
