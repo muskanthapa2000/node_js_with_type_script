@@ -2,7 +2,9 @@ import express, { Request, Response } from 'express';
 import dotenv from 'dotenv';
 import sequelize from './config/db';  // Assuming sequelize is already set up with TypeScript
 import UserRoutes from './routes/userRoute';  // Assuming user routes are typed
-import SignupRouter from './routes/signupRoute'
+import SignupRouter from './routes/signupRoute';
+import loginRoute from './routes/loginRoute';
+
 
 // Initialize environment variables
 dotenv.config();
@@ -16,6 +18,7 @@ app.use(express.json());
 // Use the user routes
 app.use('/api', UserRoutes);
 app.use('/api' , SignupRouter);
+app.use('/api' , loginRoute)
 
 // Root route
 app.get('/', (req: Request, res: Response) => {
