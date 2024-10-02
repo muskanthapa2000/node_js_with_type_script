@@ -4,7 +4,7 @@ import sequelize from './config/db';  // Assuming sequelize is already set up wi
 import UserRoutes from './routes/userRoute';  // Assuming user routes are typed
 import SignupRouter from './routes/signupRoute';
 import loginRoute from './routes/loginRoute';
-
+import BlogRouter from "./routes/blogRoute"
 
 // Initialize environment variables
 dotenv.config();
@@ -18,11 +18,13 @@ app.use(express.json());
 // Use the user routes
 app.use('/api', UserRoutes);
 app.use('/api' , SignupRouter);
-app.use('/api' , loginRoute)
+app.use('/api' , loginRoute);
+app.use('/api', BlogRouter)
 
 // Root route
 app.get('/', (req: Request, res: Response) => {
     res.send('Hello World!');
+
 });
 
 // Get the port from environment variables or default to 8000
