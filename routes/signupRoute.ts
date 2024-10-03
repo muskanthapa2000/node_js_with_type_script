@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
-import bcrypt from 'bcrypt';
-import User from '../models/userModel';  // Assuming userModel is already typed
+import bcrypt from 'bcryptjs';
+import User from '../models/userModel';  
 
 const SignupRouter = Router();
 

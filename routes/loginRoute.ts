@@ -1,7 +1,7 @@
-import { Router, Request, Response } from "express";
-import bcrypt from 'bcrypt';
+import { Router, Request, Response } from 'express';
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import User from "../models/userModel"; // Adjust the path as necessary
+import User from '../models/userModel';
 
 const loginRouter = Router();
 
